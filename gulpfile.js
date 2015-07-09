@@ -81,7 +81,7 @@ gulp.task('watch', function () {
   gulp.watch(paths.vendor, ['vendor']);
 })
 
-gulp.task('build', ['watch', 'html', 'css', 'js', 'json', 'img', 'fonts', 'vendor']);
+gulp.task('build', ['html', 'css', 'js', 'json', 'img', 'fonts', 'vendor']);
 
 gulp.task('zip', function () {
   return gulp.src(dest + '/**')
